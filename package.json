@@ -1,0 +1,52 @@
+{
+	"author": {
+		"email": "romain.faust@gmail.com",
+		"name": "Romain Faust"
+	},
+	"devDependencies": {
+		"@romain-faust/prettier-config": "~2.4.0",
+		"@romain-faust/use-singleton": "~1.0.1",
+		"@testing-library/react-hooks": "~8.0.1",
+		"@types/jest": "~28.1.4",
+		"@types/react": "~18.0.14",
+		"husky": "~8.0.1",
+		"jest": "~28.1.2",
+		"lint-staged": "~13.0.3",
+		"prettier": "~2.7.1",
+		"react": "~18.2.0",
+		"react-test-renderer": "~18.2.0",
+		"rxjs": "~7.5.5",
+		"ts-jest": "~28.0.5",
+		"typescript": "~4.7.4"
+	},
+	"files": [
+		"build",
+		"changelog.md",
+		"license.md",
+		"package.json",
+		"readme.md"
+	],
+	"license": "MIT",
+	"main": "build/index.js",
+	"name": "@romain-faust/use-unmount",
+	"peerDependencies": {
+		"@romain-faust/use-singleton": ">=1.0.1",
+		"react": ">=16.8.6",
+		"rxjs": ">=7.5.5"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/romain-faust/use-unmount"
+	},
+	"scripts": {
+		"build": "tsc",
+		"check:format": "prettier --check .",
+		"check:types": "yarn build --noEmit",
+		"test": "jest"
+	},
+	"types": "build/index.d.ts",
+	"version": "1.0.0"
+}

@@ -1,0 +1,10 @@
+{
+	"extends": ".",
+
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"types": ["jest"]
+	},
+
+	"exclude": []
+}

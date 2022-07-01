@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"declaration": true,
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "error",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"newLine": "LF",
+		"noEmitOnError": true,
+		"noErrorTruncation": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "build",
+		"pretty": true,
+		"strict": true,
+		"target": "ES5",
+		"types": []
+	},
+
+	"include": ["sources"],
+	"exclude": ["**/*.test.ts"]
+}

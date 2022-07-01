@@ -1,0 +1,47 @@
+name: CI 🧪
+
+on:
+    push:
+
+jobs:
+    check-format:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  cache: yarn
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+            - name: Check format
+              run: yarn check:format
+
+    check-types:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  cache: yarn
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+            - name: Check types
+              run: yarn check:types
+
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  cache: yarn
+            - name: Install dependencies
+              run: yarn install --frozen-lockfile
+            - name: Test
+              run: yarn test
